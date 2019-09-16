@@ -1,6 +1,7 @@
 @import "./settings/colors";
 @import "./settings/fonts";
+@import "./components/homeHeader";
 
 body {
-    background-color: blue
+    background-color: $lightgray;
 }

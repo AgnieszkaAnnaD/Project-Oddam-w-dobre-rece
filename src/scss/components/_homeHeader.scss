@@ -1,0 +1,35 @@
+.HomeHeader-log, .HomeHeader-nav {
+    display: flex;
+    justify-content: flex-end;
+    ul {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        li{
+            padding: 4px;
+        }
+        a {
+            color: $darkgray;
+            text-decoration: none;
+        }
+    }
+}
+
+.HomeHeader-log {
+    li {
+        padding: 5px;
+        margin: 2px 15px;
+    }
+    li:hover {
+        border: 1px solid $orange;
+    }
+}
+
+.HomeHeader-nav {
+  li {
+      margin: 2px 30px;
+  }
+  li:hover {
+      border: 1px solid $mediumgray;
+  }
+}
