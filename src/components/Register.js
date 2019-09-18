@@ -1,15 +1,15 @@
 import React, {Component} from "react";
 
-class HomeFooter extends Component{
+class Register extends Component{
 
     render(){
         
         return(
             <div style={{height: "300px"}}>
-                Stopka
+                Rejestracja
             </div>
         )
     }
 }
 
-export default HomeFooter
+export default Register

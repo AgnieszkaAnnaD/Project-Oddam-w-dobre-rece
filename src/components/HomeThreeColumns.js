@@ -5,7 +5,7 @@ class HomeThreeColumns extends Component{
     render(){
         
         return(
-            <div>
+            <div style={{height: "300px"}}>
                 ThreeColumns
             </div>
         )

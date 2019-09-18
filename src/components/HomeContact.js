@@ -5,7 +5,7 @@ class HomeContact extends Component{
     render(){
         
         return(
-            <div>
+            <div style={{height: "300px"}}>
                 Kontakt
             </div>
         )

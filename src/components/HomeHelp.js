@@ -5,7 +5,7 @@ class HomeHelp extends Component{
     render(){
         
         return(
-            <div>
+            <div style={{height: "300px"}}>
                 Help
             </div>
         )

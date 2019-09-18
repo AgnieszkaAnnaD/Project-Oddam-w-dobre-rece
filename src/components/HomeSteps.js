@@ -5,7 +5,7 @@ class HomeSteps extends Component{
     render(){
         
         return(
-            <div>
+            <div style={{height: "300px"}}>
                 Steps
             </div>
         )
