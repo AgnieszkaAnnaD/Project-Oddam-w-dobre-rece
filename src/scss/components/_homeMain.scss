@@ -1,0 +1,58 @@
+.HomeMain-conatiner {
+    display: flex;
+    justify-content: space-between;
+    color: $darkgray;
+}
+
+.HomeMain-img {
+    width: 45%;
+    height: 500px;
+    background-image: url("../../assets/Home-Hero-Image.jpg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+}
+
+.HomeMain-links {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h1 {
+        font-size: 35px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    h2 {
+        font-size: 35px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    svg {
+        align-self: center;
+        margin: 15px 0;
+    }
+
+}
+
+.HmeMain-btns {
+    display: flex;
+    justify-content: space-evenly;
+    button {
+        background: none;
+        box-shadow: none;
+        border: 1px solid $darkgray;
+        padding: 15px;
+        a{
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 25px;
+            font-weight: 100; 
+            color: $darkgray;
+
+        }
+    }
+    button:hover {
+        border: 1px solid $orange;
+    }
+}

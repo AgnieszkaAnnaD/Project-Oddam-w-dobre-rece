@@ -38,8 +38,8 @@ class HomeHeader extends Component{
             </div>
 
             <Element name="HomeMain"><HomeMain/></Element>
-            <Element name="HomeSteps"><HomeSteps/></Element>
             <Element><HomeThreeColumns></HomeThreeColumns></Element>
+            <Element name="HomeSteps"><HomeSteps/></Element>
             <Element name="HomeAbout"><HomeAbout/></Element>
             <Element name="HomeHelp"><HomeHelp/></Element>
             <Element name="HomeContact"><HomeContact/></Element>
