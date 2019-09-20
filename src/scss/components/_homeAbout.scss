@@ -1,0 +1,14 @@
+.HomeAbout-container {
+    display: flex;
+    justify-content: space-between;
+    color: $darkgray;
+}
+
+.HomeAbout-img {
+    width: 45%;
+    height: 500px;
+    background-image: url("../../assets/People.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+}

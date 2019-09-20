@@ -1,44 +1,32 @@
-.HomeMain-conatiner {
+.HomeSteps-steps {
     display: flex;
-    justify-content: space-between;
-    color: $darkgray;
+    justify-content: center;
+    div {
+        padding: 15px;
+        margin: 10px 30px;
+        align-items: center;
+        svg {
+            align-self: center;
+            margin: 15px 0;
+        }
+    }
+
 }
 
-.HomeMain-img {
-    width: 45%;
-    height: 500px;
-    background-image: url("../../assets/Home-Hero-Image.jpg");
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: contain;
-}
-
-.HomeMain-links {
-    width: 45%;
+.HomeSteps {
     display: flex;
     flex-direction: column;
     justify-content: center;
     h1 {
-        font-size: 35px;
         text-align: center;
-        margin-bottom: 10px;
-    }
-    h2 {
-        font-size: 35px;
-        text-align: center;
-        margin-bottom: 10px;
+        margin: 15px 0;
     }
     svg {
         align-self: center;
         margin: 15px 0;
     }
-
-}
-
-.HmeMain-btns {
-    display: flex;
-    justify-content: space-evenly;
     button {
+        align-self: center;
         background: none;
         box-shadow: none;
         border: 1px solid $darkgray;
@@ -51,10 +39,9 @@
             font-size: 25px;
             font-weight: 100; 
             color: $darkgray;
-
         }
     }
     button:hover {
         border: 1px solid $orange;
-    }
+    }  
 }
