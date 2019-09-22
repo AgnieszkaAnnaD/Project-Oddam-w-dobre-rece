@@ -1,6 +1,7 @@
 .HomeHeader-log, .HomeHeader-nav {
     display: flex;
     justify-content: flex-end;
+    margin: 15px 0;
     ul {
         display: flex;
         justify-content: space-between;
@@ -28,6 +29,7 @@
 .HomeHeader-nav {
   li {
       margin: 2px 30px;
+      cursor: pointer;
   }
   li:hover {
       border: 1px solid $mediumgray;

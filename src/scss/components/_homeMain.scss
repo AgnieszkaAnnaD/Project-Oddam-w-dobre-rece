@@ -5,12 +5,13 @@
 }
 
 .HomeMain-img {
-    width: 45%;
+    width: 60%;
     height: 500px;
     background-image: url("../../assets/Home-Hero-Image.jpg");
     background-repeat: no-repeat;
     background-position: left;
-    background-size: contain;
+    background-size: cover;
+    transform: translateX(-250px);
 }
 
 .HomeMain-links {
@@ -18,6 +19,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: auto 100px auto 30px;
     h1 {
         font-size: 35px;
         text-align: center;
@@ -38,18 +40,18 @@
 .HmeMain-btns {
     display: flex;
     justify-content: space-evenly;
+    font-weight: 300;
     button {
         background: none;
         box-shadow: none;
         border: 1px solid $darkgray;
         padding: 15px;
-        width: 200px;
-        height: 100px;
+        width: 220px;
+        height: 90px;
         a{
             text-decoration: none;
             text-transform: uppercase;
             font-size: 25px;
-            font-weight: 100; 
             color: $darkgray;
 
         }

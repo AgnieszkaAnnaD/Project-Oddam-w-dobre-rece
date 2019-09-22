@@ -2,22 +2,25 @@
     background-color: $orange;
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    height: 300px;
     color: $darkgray;
     div {
         text-align: center;
-        padding: 20px;
         margin: 0 20px;
+        width: 15%;
+        font-weight: 300;
         h1 {
-            font-size: 20px;
-            margin: 10px;
+            font-size: 70px;
+            margin-bottom: 15px;
         }
         h2{
-            font-size: 10px;
-            margin:10px;
+            font-size: 17px;
+            margin:15px;
         }
         p {
-            font-size: 10px;
-            font-family: $font-alt;
+            font-size: 12px;
+            line-height: 1.5;
         }
     }
 }

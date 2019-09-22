@@ -2,13 +2,45 @@
     display: flex;
     justify-content: space-between;
     color: $darkgray;
+    margin-top: 35px;
+    div {
+        width: 50%;
+    }
+}
+
+.HomeAbout-about {
+    background-color: $lightgray;
+    display: flex;
+    flex-direction: column;
+    color: $darkgray;
+    h1 {
+        align-self: center;
+        text-align: center;
+        font-size: 25px;
+        margin-top: 40px;
+
+    }
+    svg {
+        align-self: center;
+        margin: 15px 0;
+    }
+    p {
+        align-self: center;
+        text-align: center;
+        line-height: 2;
+        width: 70%;
+    }
+    img {
+        align-self: flex-end;
+        margin: 25px 80px;
+        height: 100px;
+    }
 }
 
 .HomeAbout-img {
-    width: 45%;
     height: 500px;
     background-image: url("../../assets/People.jpg");
     background-repeat: no-repeat;
-    background-position: right;
-    background-size: contain;
+    background-position: center;
+    background-size: cover;
 }

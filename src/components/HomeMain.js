@@ -3,6 +3,7 @@ import {NavLink} from "react-router-dom";
 import { ReactComponent as Decoration } from "../assets/Decoration.svg";
 
 
+
 class HomeMain extends Component{
 
     render(){

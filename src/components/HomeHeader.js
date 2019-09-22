@@ -8,7 +8,7 @@ import HomeSteps from "./HomeSteps";
 import HomeAbout from "./HomeAbout";
 import HomeHelp from "./HomeHelp";
 import HomeContact from "./HomeContact";
-import HomeFooter from "./HomeFooter";
+
 
 
 class HomeHeader extends Component{
@@ -43,7 +43,6 @@ class HomeHeader extends Component{
             <Element name="HomeAbout"><HomeAbout/></Element>
             <Element name="HomeHelp"><HomeHelp/></Element>
             <Element name="HomeContact"><HomeContact/></Element>
-            <Element><HomeFooter/></Element>
             </>
         )
     }
