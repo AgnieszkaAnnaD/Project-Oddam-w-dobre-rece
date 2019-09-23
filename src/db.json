@@ -1,0 +1,101 @@
+{
+    "organizacje": [
+      {
+        "id": 1 ,
+        "name": "Organizacja Lorem Ipsum 1" ,
+        "decription": "Fruitcake gummi bears chupa chups marzipan gummies danish cake",
+        "objects": "sesame, snaps, sweet cake "
+      },
+      {
+        "id": 2 ,
+        "name": "Organizacja Lorem Ipsum 2" ,
+        "decription": "Fruitcake gummi bears chupa chups marzipan gummies danish cake",
+        "objects": "sesame, snaps, sweet cake "
+      },
+      {
+        "id": 3 ,
+        "name": "Organizacja Lorem Ipsum 3" ,
+        "decription": "Fruitcake gummi bears chupa chups marzipan gummies danish cake",
+        "objects": "sesame, snaps, sweet cake "
+      },
+      {
+        "id": 4 ,
+        "name": "Organizacja Lorem Ipsum 4" ,
+        "decription": "Fruitcake gummi bears chupa chups marzipan gummies danish cake",
+        "objects": "sesame, snaps, sweet cake "
+      }
+    ],
+
+    "fundacje": [
+        {
+          "id": 1 ,
+          "name": "Fundacja Lorem Ipsum 1" ,
+          "decription": "Wafer brownie tart croissant ice cream. Sweet biscuit soufflé jelly pudding cupcake",
+          "objects": "Topping soufflé, cotton candy "
+        },
+        {
+          "id": 2 ,
+          "name": "Fundacja Lorem Ipsum 2" ,
+          "decription": "Wafer brownie tart croissant ice cream. Sweet biscuit soufflé jelly pudding cupcake",
+          "objects": "Topping soufflé, cotton candy"
+        },
+        {
+          "id": 3 ,
+          "name": "Fundacja Lorem Ipsum 3" ,
+          "decription": "Wafer brownie tart croissant ice cream. Sweet biscuit soufflé jelly pudding cupcake",
+          "objects": "Topping soufflé, cotton candy "
+        },
+        {
+          "id": 4 ,
+          "name": "Fundacja Lorem Ipsum 4" ,
+          "decription": "Wafer brownie tart croissant ice cream. Sweet biscuit soufflé jelly pudding cupcake",
+          "objects": "Topping soufflé, cotton candy "
+        },
+        {
+          "id": 5 ,
+          "name": "Fundacja Lorem Ipsum 5" ,
+          "decription": "Wafer brownie tart croissant ice cream. Sweet biscuit soufflé jelly pudding cupcake",
+          "objects": "Topping soufflé, cotton candy "
+        },
+        {
+          "id": 6 ,
+          "name": "Fundacja Lorem Ipsum 6" ,
+          "decription": "Wafer brownie tart croissant ice cream. Sweet biscuit soufflé jelly pudding cupcake",
+          "objects": "Topping soufflé, cotton candy"
+        },
+        {
+          "id": 7 ,
+          "name": "Fundacja Lorem Ipsum 7" ,
+          "decription": "Wafer brownie tart croissant ice cream. Sweet biscuit soufflé jelly pudding cupcake",
+          "objects": "Topping soufflé, cotton candy "
+        },
+        {
+          "id": 8 ,
+          "name": "Fundacja Lorem Ipsum 8" ,
+          "decription": "Wafer brownie tart croissant ice cream. Sweet biscuit soufflé jelly pudding cupcake",
+          "objects": "Topping soufflé, cotton candy "
+        }
+      ], 
+
+       "zbiorki": [
+      {
+        "id": 1 ,
+        "name": "Zbiórka Lorem Ipsum 1" ,
+        "decription": "Fruitcake gummi bears chupa chups marzipan gummies danish cake",
+        "objects": "sesame, snaps, sweet cake "
+      },
+      {
+        "id": 2 ,
+        "name": "Zbiórka Lorem Ipsum 2" ,
+        "decription": "Fruitcake gummi bears chupa chups marzipan gummies danish cake",
+        "objects": "sesame, snaps, sweet cake "
+      },
+      {
+        "id": 3 ,
+        "name": "Zbiórka Lorem Ipsum 3" ,
+        "decription": "Fruitcake gummi bears chupa chups marzipan gummies danish cake",
+        "objects": "sesame, snaps, sweet cake "
+      }
+    ]
+  }
+  

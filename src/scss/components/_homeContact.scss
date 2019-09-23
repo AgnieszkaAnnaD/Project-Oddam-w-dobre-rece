@@ -1,10 +1,12 @@
 .HomeContact-container {
     display: flex;
+    flex-direction: column;
     position: relative;
-    justify-content: flex-end;
+
+    color: $darkgray;
   }
   
-  .HomeContact-container::after {
+.HomeContact-container::after {
     content: "";
     background-image: url("../../assets/Background-Contact-Form.jpg");
     opacity: 0.5;
@@ -17,9 +19,69 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;  
-  }
+}
   
-  .HomeContact-form {
+.HomeContact-form {
+    right: 0;
     width: 40%;
-    justify-self: flex-end;
-  }
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    input {
+        box-sizing:border-box;
+        border-bottom: 1px solid black;
+        background: none;
+        box-shadow: none;
+    }
+    textarea {
+        border-bottom: 1px solid black;
+        background: none;
+        box-shadow: none;
+    }
+}
+
+.HomeContact-form-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h1 {
+        text-align: center;
+        font-size: 35px;
+        margin: 30px 0 10px;
+    }
+    svg {
+        align-self: center;
+        margin: 15px 0;
+    }
+}
+
+.HomeContact-form-inputs {
+    display: flex;
+    margin: auto;
+    justify-content: space-evenly;
+    width: 80%;
+}
+
+.HomeContact-form-input {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+  } 
+
+.HomeContact-form-textarea {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+}
+
+.HomeContact-footer {
+    display: flex;
+    justify-content: flex-end;
+    h1 {
+        align-self: center;
+        justify-self: center;
+        margin-right: 500px;
+    }
+}
