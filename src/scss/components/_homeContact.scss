@@ -29,11 +29,13 @@
     align-self: flex-end;
     input {
         box-sizing:border-box;
+        border: none;
         border-bottom: 1px solid black;
         background: none;
         box-shadow: none;
     }
     textarea {
+        border: none;
         border-bottom: 1px solid black;
         background: none;
         box-shadow: none;
