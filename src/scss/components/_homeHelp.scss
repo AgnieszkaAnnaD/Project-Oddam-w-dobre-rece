@@ -1,0 +1,10 @@
+.HomeHelp-container{
+    margin: 0 auto;
+    color: $darkgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+        font-size: $header-font-size;
+    }
+}

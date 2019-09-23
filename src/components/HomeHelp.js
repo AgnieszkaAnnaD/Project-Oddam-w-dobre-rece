@@ -8,6 +8,7 @@ class HomeHelp extends Component{
         foundations: [],
         allFoundations: [],
     }
+
     componentDidMount() {
         this.fetchPage(this.state.choose, 0, 3);
         this.fetchData(this.state.choose);
@@ -16,7 +17,6 @@ class HomeHelp extends Component{
     handleClick = (name, start, end) => () => {
         this.fetchPage(name, start, end);
         this.fetchData(name);
-
     }
 
     fetchData = name => {
@@ -56,7 +56,7 @@ class HomeHelp extends Component{
 
         if (maxPages === 1){
             return ""
-          }
+        }
 
         else if (maxPages > 1){
             for(let i=0; i < maxPages; i++){
@@ -67,6 +67,7 @@ class HomeHelp extends Component{
                 )
             } 
         }
+
         return (
             <ul>
               {links}
@@ -75,22 +76,19 @@ class HomeHelp extends Component{
     }
 
     get list() {
-        return this.state.foundations.map(item => (
-            <li>
-                <h1>{item.name}</h1>
-                <h2>{item.decription}</h2>
+        return this.state.foundations.map((item, index)=> (
+            <li key={index}>
+                <h2>{item.name}</h2>
+                <h3>{item.decription}</h3>
                 <span>{item.objects}</span>
             </li>
         ))
     }
 
-
-
-
     render(){
-        console.log(this.state)
+        // console.log(this.state)
         return(
-            <div style={{height: "300px"}}>
+            <div className="HomeHelp-container">
                 <h1>Komu pomagamy?</h1>
                 <Decoration/>
                 <div>

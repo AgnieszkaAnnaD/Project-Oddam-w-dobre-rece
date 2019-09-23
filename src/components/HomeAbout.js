@@ -12,7 +12,7 @@ class HomeAbout extends Component{
                     <h1>O nas</h1>
                     <Decoration/>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse lacus sapien, iaculis nec commodo vel, lacinia ac tortor. Praesent interdum mi neque, ut lacinia mi congue in. </p>
-                    <img src={signature}/>
+                    <img src={signature} alt="people"/>
                 </div>
                 <div className="HomeAbout-img">
 

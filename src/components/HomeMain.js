@@ -13,11 +13,13 @@ class HomeMain extends Component{
                 <div className="HomeMain-img">
                 </div>
                 <div className="HomeMain-links">
-                    <h1>Zacznij pomagać!</h1>
-                    <h2>Oddaj niechciane rzeczy w zaufane ręce</h2> 
+                    <h1>Zacznij pomagać!
+                        <br/>
+                        Oddaj niechciane rzeczy w zaufane ręce
+                    </h1>
                     <Decoration/>
                     <div className="HmeMain-btns">
-                        <button><NavLink to={`/logowanie`}>Oddaj rzeczy</NavLink></button>
+                        <button><NavLink to={`/logowanie`}>Oddaj <br/> rzeczy</NavLink></button>
                         <button><NavLink to={`/logowanie`}>Zorganizuj zbiórkę</NavLink></button>
                     </div>
                 </div>

@@ -18,25 +18,25 @@ class HomeSteps extends Component{
                 <Decoration/>
                 <div className="HomeSteps-steps">
                     <div>
-                        <img src={icon1} />
+                        <img src={icon1} alt="icon1"/>
                         <h2>Wybierz rzeczy</h2> 
                         <p>__________</p>
                         <h3>ubrania, zabawki, sprzęt i inne</h3>
                     </div>
                     <div>
-                        <img src={icon2} />
+                        <img src={icon2} alt="icon2"/>
                         <h2>Spakuj je</h2> 
                         <p>__________</p>
                         <h3>skorzystaj z worków na śmieci</h3>
                     </div>
                     <div>
-                        <img src={icon3} />
+                        <img src={icon3} alt="icon3"/>
                         <h2>Zdecyduj komu chcesz pomóc</h2> 
                         <p>__________</p>
                         <h3>wybierz zaufane miejsce</h3>
                     </div>
                     <div>
-                        <img src={icon4} />
+                        <img src={icon4} alt="icon4"/>
                         <h2>Zamów kuriera</h2> 
                         <p>__________</p>
                         <h3>kurier przyjedzie w dogodnym terminie</h3>

@@ -41,8 +41,8 @@ class HomeContact extends Component{
                 <footer className="HomeContact-footer">
                     <h1>Copyright by Coders Lab</h1>
                     <div>
-                        <img src={instagram}/>
-                        <img src={facebook}/>
+                        <img src={instagram} alt="instagram icon"/>
+                        <img src={facebook} alt="facebook icon"/>
                     </div>
                 </footer>
             </div>

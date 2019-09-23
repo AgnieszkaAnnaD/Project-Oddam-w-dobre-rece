@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import {NavLink} from "react-router-dom";
-import {Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
+import {Link, Element} from 'react-scroll';
 
 import HomeMain from "./HomeMain";
 import HomeThreeColumns from "./HomeThreeColumns";

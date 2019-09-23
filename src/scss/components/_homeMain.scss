@@ -1,34 +1,30 @@
 .HomeMain-conatiner {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     color: $darkgray;
 }
 
 .HomeMain-img {
-    width: 60%;
+    width: 50%;
     height: 500px;
     background-image: url("../../assets/Home-Hero-Image.jpg");
     background-repeat: no-repeat;
-    background-position: left;
+    background-position: right;
     background-size: cover;
-    transform: translateX(-250px);
+    // transform: translateX(-250px);
 }
 
 .HomeMain-links {
-    width: 45%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: auto 100px auto 30px;
+    margin: auto;
     h1 {
-        font-size: 35px;
+        font-size: $header-font-size;
         text-align: center;
         margin-bottom: 10px;
-    }
-    h2 {
-        font-size: 35px;
-        text-align: center;
-        margin-bottom: 10px;
+        line-height: 1.5;
     }
     svg {
         align-self: center;
@@ -40,20 +36,22 @@
 .HmeMain-btns {
     display: flex;
     justify-content: space-evenly;
-    font-weight: 300;
+    
     button {
         background: none;
         box-shadow: none;
         border: 1px solid $darkgray;
-        padding: 15px;
-        width: 220px;
-        height: 90px;
+        padding: 5px;
+        width: 250px;
+        height: 100px;
         a{
+            align-self: center;
             text-decoration: none;
             text-transform: uppercase;
-            font-size: 25px;
+            font-size: $header-font-size;
             color: $darkgray;
-
+            font-family: $font-base;
+            font-weight: 300;
         }
     }
     button:hover {
