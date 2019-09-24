@@ -27,20 +27,22 @@
         margin: 15px 0;
     }
     button {
+        margin-top: 20px;
         align-self: center;
         background: none;
         box-shadow: none;
         border: 1px solid $darkgray;
-        padding: 15px;
-        width: 220px;
-        height: 90px;
-        margin-top: 20px;
+        padding: 5px;
+        width: 250px;
+        height: 100px;
         a{
+            align-self: center;
             text-decoration: none;
             text-transform: uppercase;
-            font-size: 25px;
-            font-weight: 300; 
+            font-size: $header-font-size;
             color: $darkgray;
+            font-family: $font-base;
+            font-weight: 300;
         }
     }
     button:hover {

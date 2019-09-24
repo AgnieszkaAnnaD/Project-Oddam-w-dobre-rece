@@ -69,7 +69,7 @@ class HomeHelp extends Component{
         }
 
         return (
-            <ul>
+            <ul className="HomeHelp-pagination">
               {links}
             </ul>
             )
@@ -77,10 +77,12 @@ class HomeHelp extends Component{
 
     get list() {
         return this.state.foundations.map((item, index)=> (
-            <li key={index}>
+            <li key={index}> 
                 <h2>{item.name}</h2>
-                <h3>{item.decription}</h3>
-                <span>{item.objects}</span>
+                <div>
+                    <h3>{item.decription}</h3>
+                    <h4>{item.objects}</h4>
+                </div>  
             </li>
         ))
     }
@@ -96,9 +98,7 @@ class HomeHelp extends Component{
                     <button onClick={this.handleClick("organizacje", 0, 3)}>Organizacjom pozarządowym</button>
                     <button onClick={this.handleClick("zbiorki", 0, 3)}>Lokalnym zbiórkom</button>
                 </div>
-                <div>
-                W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z którymi współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują
-                </div>
+                <p>W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z którymi współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują.</p>
                 <ul>
                     {this.list}
                 </ul> 

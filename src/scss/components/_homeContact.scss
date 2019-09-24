@@ -1,15 +1,16 @@
 .HomeContact-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
     position: relative;
-
+    height: 900px;
     color: $darkgray;
   }
   
 .HomeContact-container::after {
     content: "";
     background-image: url("../../assets/Background-Contact-Form.jpg");
-    opacity: 0.5;
+    opacity: 0.2;
     top: 0;
     left: 0;
     bottom: 0;
@@ -27,6 +28,9 @@
     display: flex;
     flex-direction: column;
     align-self: flex-end;
+    justify-self: center;
+    margin: auto 0;
+    font-family: $font-base;
     input {
         box-sizing:border-box;
         border: none;
@@ -46,6 +50,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 80%;
     h1 {
         text-align: center;
         font-size: 35px;
@@ -59,20 +64,19 @@
 
 .HomeContact-form-inputs {
     display: flex;
-    margin: auto;
-    justify-content: space-evenly;
+    justify-content: space-between;
     width: 80%;
+    font-weight: 600;
 }
 
 .HomeContact-form-input {
     display: flex;
     flex-direction: column;
-    margin: 15px;
+    margin-bottom: 30px;
   } 
 
 .HomeContact-form-textarea {
     display: flex;
-    margin: auto;
     flex-direction: column;
     justify-content: center;
     width: 80%;
@@ -81,9 +85,10 @@
 .HomeContact-footer {
     display: flex;
     justify-content: flex-end;
+    align-self: flex-end;
     h1 {
         align-self: center;
-        justify-self: center;
+        justify-self: flex-end;
         margin-right: 500px;
     }
 }
