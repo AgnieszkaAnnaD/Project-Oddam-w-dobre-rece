@@ -33,6 +33,7 @@ class HomeContact extends Component{
                         <div className="HomeContact-form-textarea">
                             <h1>Wpisz swoją wiadomość</h1>
                             <textarea placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mollis sem eget metus auctor, a finibus orci sagittis. Nullam magna urna, ultrices pharetra dolor at, porttitor ultrices justo. Maecenas consequat, nunc sed scelerisque posuere"></textarea>  
+                           
                         </div>
                         <button onSubmit={this.handleSubmit}>Wyślij</button>
                     </form>
