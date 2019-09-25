@@ -59,7 +59,12 @@ class HomeContact extends Component{
                 messageValidation: "error"
             })  
         }
-        this.handleFetch(this.state.name+this.state.email+this.state.message)
+
+        const {nameValidation, emailValidation, messageValidation} = this.state
+        if (nameValidation === "ok" && emailValidation === "ok" && messageValidation === "ok"){
+            this.handleFetch(this.state.name+this.state.email+this.state.message)
+        }
+        
         console.log(JSON.stringify(this.state.name+this.state.email+this.state.message))
     }
 
@@ -84,7 +89,9 @@ class HomeContact extends Component{
     handleFetch = (e) => {
         fetch(`https://fer-api.coderslab.pl/v1/portfolio/contact`, 
             {
-                "Content-Type": "application/json",
+                headers: {
+                    "Content-Type": "application/json",    
+                },
                 method: 'POST',
                 body: JSON.stringify(e)
             })   

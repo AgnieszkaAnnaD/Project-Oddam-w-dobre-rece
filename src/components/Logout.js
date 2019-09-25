@@ -2,9 +2,12 @@ import React, {Component} from "react";
 import { ReactComponent as Decoration } from "../assets/Decoration.svg";
 import {NavLink} from "react-router-dom";
 
-class Register extends Component{
+
+class Logout extends Component{
 
     render(){
+
+        
         
         return(
             <>
@@ -30,23 +33,12 @@ class Register extends Component{
 
             <div className="Login-container">
                 <div>
-                    <h1>Załóż konto</h1>
+                    <h1>Wylogowanie nastąpiło pomyślnie</h1>
                     <Decoration/>
-                    <div className="Register-form">
-                        <h2>Email</h2>
-                        <input></input>
-                        <h2>Hasło</h2>
-                        <input></input>
-                        <h2>Powtórz hasło</h2>
-                        <input></input>
-                    </div>
                 </div> 
                 <ul className="Login-links">
                    <li>
-                       <NavLink to={`/rejestracja`}>Załóż konto</NavLink>
-                    </li>
-                   <li>
-                       <NavLink to={`/logowanie`}>Zaloguj się</NavLink>
+                       <NavLink to={`/`}>Strona główna</NavLink>
                     </li>
                </ul>     
             </div>
@@ -55,4 +47,4 @@ class Register extends Component{
     }
 }
 
-export default Register
+export default Logout
