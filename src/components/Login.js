@@ -5,6 +5,21 @@ import {NavLink} from "react-router-dom";
 
 class Login extends Component{
 
+    state = {
+        email: "",
+        password: "",
+    }
+
+    handleChange = (e) => {
+        this.setState({
+            [e.target.id]: e.target.value
+        })
+    }
+
+    handleSubmit =(e) => {
+        e.preventDefault();
+        console.log(this.state)
+    }
     render(){
 
         
@@ -30,26 +45,27 @@ class Login extends Component{
                    <li>Kontakt</li>
                </ul>
             </div>
-
             <div className="Login-container">
                 <div>
                     <h1>Zaloguj się</h1>
                     <Decoration/>
-                    <div className="Login-form">
-                        <h2>Email</h2>
-                        <input></input>
-                        <h2>Hasło</h2>
-                        <input></input>
+                    <div className="Register-form">
+                        <form onSubmit={this.handleSubmit}>
+                            <h2>Email</h2>
+                            <input type="email" id="email" onChange={this.handleChange}></input>
+                            <h2>Hasło</h2>
+                            <input type="password" id="password" onChange={this.handleChange}></input>
+                            <button type="submit">Zaloguj się</button>
+                              
+                        </form>
                     </div>
-                </div> 
+                </div>   
+                
                 <ul className="Login-links">
-                   <li>
-                       <NavLink to={`/rejestracja`}>Załóż konto</NavLink>
+                    <li>
+                        <NavLink to={`/logowanie`}>Zaloguj się</NavLink>
                     </li>
-                   <li>
-                       <NavLink to={`/logowanie`}>Zaloguj się</NavLink>
-                    </li>
-               </ul>     
+                </ul>     
             </div>
             </>
         )

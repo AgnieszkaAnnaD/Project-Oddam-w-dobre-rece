@@ -4,6 +4,23 @@ import {NavLink} from "react-router-dom";
 
 class Register extends Component{
 
+    state = {
+        email: "",
+        password: "",
+        confirmPassword: "",
+    }
+
+    handleChange = (e) => {
+        this.setState({
+            [e.target.id]: e.target.value
+        })
+    }
+
+    handleSubmit =(e) => {
+        e.preventDefault();
+        console.log(this.state)
+    }
+
     render(){
         
         return(
@@ -33,22 +50,25 @@ class Register extends Component{
                     <h1>Załóż konto</h1>
                     <Decoration/>
                     <div className="Register-form">
-                        <h2>Email</h2>
-                        <input></input>
-                        <h2>Hasło</h2>
-                        <input></input>
-                        <h2>Powtórz hasło</h2>
-                        <input></input>
+                        <form onSubmit={this.handleSubmit}>
+                            <h2>Email</h2>
+                            <input type="email" id="email" onChange={this.handleChange}></input>
+                            <h2>Hasło</h2>
+                            <input type="password" id="password" onChange={this.handleChange}></input>
+                            <h2>Powtórz hasło</h2>
+                            <input type="password" id="confirmPassword" onChange={this.handleChange}></input>
+                            <button type="submit">Załóż konto</button>
+                              
+                        </form>
                     </div>
-                </div> 
+                </div>   
+                
                 <ul className="Login-links">
-                   <li>
-                       <NavLink to={`/rejestracja`}>Załóż konto</NavLink>
+                    <li>
+                        <NavLink to={`/logowanie`}>Zaloguj się</NavLink>
                     </li>
-                   <li>
-                       <NavLink to={`/logowanie`}>Zaloguj się</NavLink>
-                    </li>
-               </ul>     
+                </ul> 
+               
             </div>
             </>
         )

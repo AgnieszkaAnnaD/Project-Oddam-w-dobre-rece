@@ -62,7 +62,11 @@ class HomeContact extends Component{
 
         const {nameValidation, emailValidation, messageValidation} = this.state
         if (nameValidation === "ok" && emailValidation === "ok" && messageValidation === "ok"){
-            this.handleFetch(this.state.name+this.state.email+this.state.message)
+            this.handleFetch({
+                name: this.state.name,
+                email: this.state.email,
+                message: this.state.message
+            })
         }
         
         console.log(JSON.stringify(this.state.name+this.state.email+this.state.message))
@@ -137,7 +141,7 @@ class HomeContact extends Component{
                         <Decoration/>  
                         {messageSent}
                     </div>
-                    <form>
+                    <form onSubmit={this.handleSubmit}>
                         <div className="HomeContact-form-inputs">
                             <div className="HomeContact-form-input">
                                 <h1>Wpisz swoje imię</h1>
@@ -170,7 +174,7 @@ class HomeContact extends Component{
                             </textarea>  
                             {allertMessage}
                         </div>
-                        <button onSubmit={this.handleSubmit} onClick={this.handleClick}>Wyślij</button>
+                        <button  onClick={this.handleClick}>Wyślij</button>
                     </form>
 
                 </div>
