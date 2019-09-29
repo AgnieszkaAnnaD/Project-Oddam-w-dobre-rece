@@ -2,13 +2,21 @@ import React, {Component} from "react";
 import { ReactComponent as Decoration } from "../assets/Decoration.svg";
 import {NavLink} from "react-router-dom";
 
+import { connect } from 'react-redux'
+import { add } from '../redux/actions/todos'
+
 class Register extends Component{
 
-    state = {
+    constructor(props){
+        super(props);
+        this.state = {
         email: "",
         password: "",
         confirmPassword: "",
     }
+    }
+
+    
 
     handleChange = (e) => {
         this.setState({
@@ -18,7 +26,8 @@ class Register extends Component{
 
     handleSubmit =(e) => {
         e.preventDefault();
-        console.log(this.state)
+        // console.log(this.state, this.props);
+        this.props.addTodo(this.state)
     }
 
     render(){
@@ -57,8 +66,7 @@ class Register extends Component{
                             <input type="password" id="password" onChange={this.handleChange}></input>
                             <h2>Powtórz hasło</h2>
                             <input type="password" id="confirmPassword" onChange={this.handleChange}></input>
-                            <button type="submit">Załóż konto</button>
-                              
+                            <button type="submit" >Załóż konto</button>
                         </form>
                     </div>
                 </div>   
@@ -74,5 +82,12 @@ class Register extends Component{
         )
     }
 }
-
-export default Register
+const mapDispatchToProps = dispatch => ({
+    addTodo: accounts => dispatch(add(accounts))
+  })
+  
+  const mapStateToProps = store => ({
+    store: store
+  })
+  
+  export default connect(mapStateToProps, mapDispatchToProps)(Register);
