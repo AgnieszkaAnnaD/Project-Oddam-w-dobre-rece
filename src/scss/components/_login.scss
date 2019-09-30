@@ -37,6 +37,7 @@
                 border: none;
                 border-bottom: 2px solid lightgrey;
                 background: none;
+                margin-left: 45px;
             }
         }
     }
@@ -75,7 +76,38 @@
             border: none;
             border-bottom: 2px solid lightgrey;
             background: none;
+            margin-left: 45px;
         }
     }
 }
 
+.Register-button, .Login-button {
+    padding: 15px;
+    background: none;
+    border: none;
+    color: $darkgray;
+    font-size: 100%;
+    font-family: $font-base;
+}
+
+.Register-button:hover, .Login-button:hover {
+    border: 1px solid $mediumgray;
+}
+
+.Register-button{
+    transform: translate(255px, 65px);
+}
+
+.Login-button {
+    transform: translate(255px, 75px);
+}
+
+
+.LoginError {
+    color: red;
+    font-size: 15px;
+    display: flex;
+    p {
+        width: 200px;
+    }
+}

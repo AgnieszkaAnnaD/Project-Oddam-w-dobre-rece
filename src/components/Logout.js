@@ -23,7 +23,7 @@ class Logout extends Component{
             </div>
             <div className="HomeHeader-nav">
                 <ul>
-                   <li>Start</li>
+                <NavLink to={`/`}>Start</NavLink>
                    <li>O co chodzi?</li>
                    <li>O nas</li>
                    <li>Fundacja i organizacje</li>

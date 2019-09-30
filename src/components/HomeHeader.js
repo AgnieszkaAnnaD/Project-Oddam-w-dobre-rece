@@ -1,17 +1,23 @@
-import React, {Component} from "react";
-import {NavLink} from "react-router-dom";
-import {Link, Element} from 'react-scroll';
+import React, { Component } from 'react';
+import { NavLink } from 'react-router-dom';
+import { Link, Element } from 'react-scroll';
+import { connect } from 'react-redux';
+import { signOut } from '../redux/actions/authActions'
 
-import HomeMain from "./HomeMain";
-import HomeThreeColumns from "./HomeThreeColumns";
-import HomeSteps from "./HomeSteps";
-import HomeAbout from "./HomeAbout";
-import HomeHelp from "./HomeHelp";
-import HomeContact from "./HomeContact";
+import HomeMain from './HomeMain';
+import HomeThreeColumns from './HomeThreeColumns';
+import HomeSteps from './HomeSteps';
+import HomeAbout from './HomeAbout';
+import HomeHelp from './HomeHelp';
+import HomeContact from './HomeContact';
 
 
 
 class HomeHeader extends Component{
+
+    constructor(props){
+        super(props);
+    }
 
     render(){
         
@@ -24,6 +30,9 @@ class HomeHeader extends Component{
                     </li>
                    <li>
                        <NavLink to={`/rejestracja`}>Załóż konto</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to={`/wylogowano`} onClick={this.props.signOut}>Wyloguj</NavLink>
                     </li>
                </ul>
             </div>
@@ -48,4 +57,17 @@ class HomeHeader extends Component{
     }
 }
 
-export default HomeHeader
+const mapDispatchToProps = (dispatch) => {
+    return {
+        signOut: () => dispatch(signOut())
+    }
+}
+
+const mapStateToProps = (state) => {
+    console.log(state);
+    return ({
+
+    })
+  }
+
+export default connect(mapStateToProps, mapDispatchToProps)(HomeHeader)

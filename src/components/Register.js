@@ -42,11 +42,14 @@ class Register extends Component{
                    <li>
                        <NavLink to={`/rejestracja`}>Załóż konto</NavLink>
                     </li>
+                    <li>
+                        <NavLink to={`/wylogowano`}>Wyloguj</NavLink>
+                    </li>
                </ul>
             </div>
             <div className="HomeHeader-nav">
                 <ul>
-                   <li>Start</li>
+                    <NavLink to={`/`}>Start</NavLink>
                    <li>O co chodzi?</li>
                    <li>O nas</li>
                    <li>Fundacja i organizacje</li>
@@ -66,7 +69,7 @@ class Register extends Component{
                             <input type="password" id="password" onChange={this.handleChange}></input>
                             <h2>Powtórz hasło</h2>
                             <input type="password" id="confirmPassword" onChange={this.handleChange}></input>
-                            <button type="submit" >Załóż konto</button>
+                            <button type="submit" className="Register-button">Załóż konto</button>
                         </form>
                     </div>
                 </div>   

@@ -11,16 +11,16 @@ import {
 import Home from "./components/Home";
 import Login from "./components/Login";
 import Register from "./components/Register";
+import Logout from "./components/Logout";
 
 function App(props) {
-//  props.addTodo({ cos: 'tylek'})
   console.log(props.store)
   return (
     <HashRouter>
-      <button onClick={() => props.addTodo({ cos: 'tylek'})} >dupa</button>
       <Route exact path={`/`} component={Home}/>
       <Route path={`/logowanie`} component={Login}/>
       <Route path={`/rejestracja`} component={Register}/>
+      <Route path={`/wylogowano`} component={Logout}/>
     </HashRouter>
   );
 }
