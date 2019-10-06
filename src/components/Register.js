@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import { ReactComponent as Decoration } from "../assets/Decoration.svg";
 import {NavLink} from "react-router-dom";
+import { signUp } from "../redux/actions/authActions";
 
 import { connect } from 'react-redux'
 import { add } from '../redux/actions/todos'
@@ -12,7 +13,7 @@ class Register extends Component{
         this.state = {
         email: "",
         password: "",
-        confirmPassword: "",
+        // confirmPassword: "",
     }
     }
 
@@ -26,8 +27,7 @@ class Register extends Component{
 
     handleSubmit =(e) => {
         e.preventDefault();
-        // console.log(this.state, this.props);
-        this.props.addTodo(this.state)
+        this.props.signUp(this.state)
     }
 
     render(){
@@ -85,12 +85,14 @@ class Register extends Component{
         )
     }
 }
-const mapDispatchToProps = dispatch => ({
-    addTodo: accounts => dispatch(add(accounts))
-  })
-  
-  const mapStateToProps = store => ({
-    store: store
-  })
-  
+const mapStateToProps = (state) => {
+    return {
+        auth: state.firebase.auth
+    }
+}
+const mapDispatchToProps = (dispatch) => {
+    return {
+        signUp: (newUser) => dispatch(signUp(newUser))
+    }
+}
   export default connect(mapStateToProps, mapDispatchToProps)(Register);

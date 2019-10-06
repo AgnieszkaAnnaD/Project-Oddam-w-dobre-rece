@@ -20,7 +20,8 @@ class HomeHeader extends Component{
     }
 
     render(){
-        
+        const { auth } = this.props;
+        console.log(auth)
         return(
             <>
             <div className="HomeHeader-log">
@@ -64,9 +65,8 @@ const mapDispatchToProps = (dispatch) => {
 }
 
 const mapStateToProps = (state) => {
-    console.log(state);
     return ({
-
+        auth: state.firebase.auth
     })
   }
 

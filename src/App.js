@@ -14,7 +14,7 @@ import Register from "./components/Register";
 import Logout from "./components/Logout";
 
 function App(props) {
-  console.log(props.store)
+  // console.log(props.store);
   return (
     <HashRouter>
       <Route exact path={`/`} component={Home}/>
