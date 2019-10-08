@@ -4,7 +4,7 @@ import {NavLink} from "react-router-dom";
 import { signUp } from "../redux/actions/authActions";
 
 import { connect } from 'react-redux'
-import { add } from '../redux/actions/todos'
+
 
 class Register extends Component{
 

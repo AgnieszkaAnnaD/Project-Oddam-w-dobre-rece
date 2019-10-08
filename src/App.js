@@ -1,7 +1,7 @@
 import React from 'react';
 import './scss/main.scss';
 import { connect } from 'react-redux'
-import { add } from './redux/actions/todos'
+
 
 import {
   HashRouter,
@@ -13,8 +13,8 @@ import Login from "./components/Login";
 import Register from "./components/Register";
 import Logout from "./components/Logout";
 
-function App(props) {
-  // console.log(props.store);
+function App() {
+ 
   return (
     <HashRouter>
       <Route exact path={`/`} component={Home}/>
@@ -25,12 +25,4 @@ function App(props) {
   );
 }
 
-const mapDispatchToProps = dispatch => ({
-  addTodo: data => dispatch(add(data))
-})
-
-const mapStateToProps = store => ({
-  store: store
-})
-
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default App

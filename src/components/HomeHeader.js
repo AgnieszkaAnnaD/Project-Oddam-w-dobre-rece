@@ -3,7 +3,6 @@ import { NavLink } from 'react-router-dom';
 import { Link, Element } from 'react-scroll';
 import { connect } from 'react-redux';
 import { signOut } from '../redux/actions/authActions'
-
 import HomeMain from './HomeMain';
 import HomeThreeColumns from './HomeThreeColumns';
 import HomeSteps from './HomeSteps';

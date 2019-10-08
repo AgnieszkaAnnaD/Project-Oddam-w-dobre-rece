@@ -19,6 +19,7 @@ Development version of website project created with React.
 
 * In the project directory, you can run:
 
+`npm install`
 `npm start`
 
 * In db.json directory run JSON server:
