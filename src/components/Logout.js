@@ -11,26 +11,6 @@ class Logout extends Component{
         
         return(
             <>
-            <div className="HomeHeader-log">
-               <ul>
-                   <li>
-                       <NavLink to={`/logowanie`}>Zaloguj</NavLink>
-                    </li>
-                   <li>
-                       <NavLink to={`/rejestracja`}>Załóż konto</NavLink>
-                    </li>
-               </ul>
-            </div>
-            <div className="HomeHeader-nav">
-                <ul>
-                <NavLink to={`/`}>Start</NavLink>
-                   <li>O co chodzi?</li>
-                   <li>O nas</li>
-                   <li>Fundacja i organizacje</li>
-                   <li>Kontakt</li>
-               </ul>
-            </div>
-
             <div className="Login-container">
                 <div>
                     <h1>Wylogowanie nastąpiło pomyślnie</h1>
@@ -39,6 +19,12 @@ class Logout extends Component{
                 <ul className="Login-links">
                    <li>
                        <NavLink to={`/`}>Strona główna</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to={`/logowanie`}>Zaloguj się</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to={`/rejestracja`}>Zarejestruj się</NavLink>
                     </li>
                </ul>     
             </div>

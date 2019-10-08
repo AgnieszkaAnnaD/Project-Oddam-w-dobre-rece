@@ -47,16 +47,11 @@ class Register extends Component{
                     </li>
                </ul>
             </div>
-            <div className="HomeHeader-nav">
+            <div className="HomeHeader-nav login-start">
                 <ul>
-                    <NavLink to={`/`}>Start</NavLink>
-                   <li>O co chodzi?</li>
-                   <li>O nas</li>
-                   <li>Fundacja i organizacje</li>
-                   <li>Kontakt</li>
+                    <NavLink to={`/`}>Przejdź do strony głównej</NavLink>
                </ul>
             </div>
-
             <div className="Login-container">
                 <div>
                     <h1>Załóż konto</h1>
