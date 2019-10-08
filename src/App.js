@@ -1,8 +1,5 @@
 import React from 'react';
 import './scss/main.scss';
-import { connect } from 'react-redux'
-
-
 import {
   HashRouter,
   Route
